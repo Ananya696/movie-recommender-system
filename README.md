@@ -1,18 +1,27 @@
 # 🎬 Movie Recommender System
 
-A Movie Recommender System built using Python, Streamlit, and Machine Learning.
+A Movie Recommender System built using Python, Stream lit, and Machine Learning.
 
 ## Features
 
 * Recommends 5 similar movies based on content similarity
-* Displays movie posters using the TMDb API
-* Interactive Streamlit web interface
+* Displays movie posters using the TMDB API
+* Interactive Stream lit web interface
 * Content-based recommendation system
+
+## Project Workflow
+
+1. User selects a movie.
+2. Content-based filtering finds similar movies.
+3. Cosine similarity calculates recommendation scores.
+4. Top 5 movies are selected.
+5. TMDB API fetches movie posters.
+6. Recommendations are displayed using Stream lit.
 
 ## Tech Stack
 
 * Python
-* Streamlit
+* Stream lit
 * Pandas
 * Scikit-Learn
 * Numpy
@@ -32,6 +41,13 @@ A Movie Recommender System built using Python, Streamlit, and Machine Learning.
 
 ![Recommendations 2](recommendation2.png)
 
+## Repository Structure
+
+app.py                 # Streamlit application
+movie_dict.pkl         # Movie metadata
+movie recommender system.ipynb  # Model building notebook
+requirements.txt       # Dependencies
+
 ## How to Run
 
 Install the required libraries:
@@ -48,7 +64,7 @@ streamlit run app.py
 
 ## Dataset
 
-* TMDb 5000 Movies Dataset
+* TMDB 5000 Movies Dataset
 * Content-Based Filtering
 * Cosine Similarity
 
