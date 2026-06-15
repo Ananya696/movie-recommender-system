@@ -2,6 +2,8 @@ import requests
 import streamlit as st  ##library...error due to virtual environment as no libraries have been pre-installed
 import pickle
 import pandas as pd
+import os
+import gdown
 def fetch_poster(movie_id):
     response=requests.get('https://api.themoviedb.org/3/movie/{}?api_key=38c07cc10aee179b020ae9de92084a12'.format(movie_id))
     data=response.json()
@@ -26,10 +28,15 @@ def recommend(movie):
 movies_dict=pickle.load(open('movie_dict.pkl','rb'))
 movies=pd.DataFrame(movies_dict)
 
-similarity=pickle.load(open('similarity.pkl','rb'))
-print(type(similarity))
+if not os.path.exists("similarity.pkl"):
+    file_id = "18p_cFcM6gCa7SLONP3nN7QjFNe1I2_Dj"
+    url = f"https://drive.google.com/uc?id={file_id}"
+    gdown.download(url, "similarity.pkl", quiet=False)
 
-st.title("Movies Recommender System")
+similarity = pickle.load(open('similarity.pkl', 'rb'))
+# print(type(similarity))
+
+st.title("🎬 Movie Recommender System")
 selected_movie_name=st.selectbox('Select your desired movie',movies['title'].values)
 
 if st.button('Recommend'):
