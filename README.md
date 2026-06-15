@@ -72,6 +72,10 @@ streamlit run app.py
 * Content-Based Filtering
 * Cosine Similarity
 
+## Note
+
+The similarity matrix is automatically downloaded from Google Drive during the first run.
+
 ## Author
 
 Ananya Saxena
