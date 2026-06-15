@@ -31,15 +31,15 @@ A Movie Recommender System built using Python, Stream lit, and Machine Learning.
 
 ### Home Page
 
-![Home Page](home.png)
+![Home Page](home.png.png)
 
 ### Recommendations Example 1
 
-![Recommendations 1](recommendation1.png)
+![Recommendations 1](recommendation1.png.png)
 
 ### Recommendations Example 2
 
-![Recommendations 2](recommendation2.png)
+![Recommendations 2](recommendation2.png.png)
 
 ## Repository Structure
 
