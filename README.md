@@ -2,6 +2,10 @@
 
 A Movie Recommender System built using Python, Stream lit, and Machine Learning.
 
+## Live Demo
+
+https://movie-recommender-system-7mx4.onrender.com
+
 ## Features
 
 * Recommends 5 similar movies based on content similarity
